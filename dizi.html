@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aziz Film</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" ></script>
+    <link rel="stylesheet"  href="style1.css" />
+
+
+    <style>
+
+
+#downArrowZ{
+color: #fff;
+font-size: 10rem;
+margin-top: 35rem;
+padding: -3rem;
+margin-right: 43rem;
+}
+
+.section{
+  margin-top: 4rem;
+}
+
+body{
+  background-color:black;
+}
+
+#upArrowZ{
+color: #fff;
+font-size: 10rem;
+margin-top: 83rem;
+padding: -3rem;
+margin-right: 43rem;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <!-- Sayfa içeriği buraya gelecek -->
+    <!--! navbar start  -->
+    <div class="navbar">
+      <div class="navbar-wrapper">
+        <div class="logo-wrapper">
+          <a href="index.html" class="logo">A<span id="abc">ziz</span></a>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li><a class="menu-list-item"  href="index.html" > Ana Sayfa</a></li>
+            <li><a  href="filmler.html" class="menu-list-item">Filmler</a></li>
+            <li><a  href="dizi.html" class="menu-list-item">Diziler</a></li>
+            <li><a  href="liste.html" class="menu-list-item">Listem</a></li>
+            <li><a  href="contact1.html" class="menu-list-item">İletişim</a></li>
+         </ul>
+        </div>
+          <div class="toggle">
+            <i class="bi bi-moon-fill toggle-icon"></i>
+            <i class="bi bi-brightness-high-fill toggle-icon"></i>
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+    <!--! navbar end  -->
+    
+    <ul class="filmler-list">
+      <li>
+      <div class="container">
+      <!-- featured content start -->
+      <div class="content-wrapper">
+        <div class="featured-content-d">
+          <img class="featured-title" src="img/dark.png" alt="" />
+          <p class="featured-desc">
+            Bir çocuğun kaybolması, dört aileyi hummalı bir cevap arayışına iter. Bu arayışları, üç nesli kapsayan akıl almaz bir gizemi ortaya çıkarmalarına neden olur.
+          </p>
+          <div class="featured-buttons">
+            <button class="play-button" onclick=redirectToLink(https://www.youtube.com/watch?v=5pdBE3kfm5U)>
+              <i><a href="https://www.youtube.com/watch?v=5pdBE3kfm5U" class="bi bi-play-circle"></a></i>
+              Oynat
+            </button>
+            <button class="info-button" onclick=redirectToLink(https://www.netflix.com/tr/title/80100172)>
+              <i><a class="bi bi-info-circle" href="https://www.netflix.com/tr/title/80100172"></a></i>
+              Daha Fazla Bilgi
+            </button>
+          </div>
+        </div>
+      </li>  <i id="downArrowZ" class="bi bi-chevron-down arrow"></i>
+      <li>
+      </div>
+      <div class="section">
+      <div class="container">
+        <div class="content-wrapper">
+          <div class="featured-content-7">
+            <img class="featured-title" src="https://occ-0-778-784.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABRs8secr0lySvSU50WJqvpMvqwKJzr9oRy1N0WcZoXurNqGsSlra1-ztitsFcV05yhL3GEOnODJhmBcu8ELJdCCbuvZnKRBu0pCgq9MZSBFN.png?r=9b3" alt="" />
+            <p class="featured-desc">
+              Küçükken kör kalan Matt Murdock, New York'un Hell’s Kitchen bölgesinde, gündüzleri bir avukat, geceleriyse Süper Kahraman Daredevil olarak adalet için savaşmaktadır.
+                        </p>
+            <div class="featured-buttons">
+              <button class="play-button" onclick=redirectToLink(https://www.youtube.com/watch?v=jAy6NJ_D5vU)>
+                <i><a href="https://www.youtube.com/watch?v=jAy6NJ_D5vU" class="bi bi-play-circle"></a></i>
+                Oynat
+              </button>
+              <button class="info-button" onclick=redirectToLink(https://www.netflix.com/tr-en/title/60026123)>
+                <i><a href="https://www.netflix.com/tr-en/title/60026123" class="bi bi-info-circle" ></a></i>
+                Daha Fazla Bilgi
+              </button>
+            </div>
+          </div>
+        </div>
+      </li> <i id="upArrowZ" class="bi bi-chevron-up arrow"  ></i>
+      </ul>
+
+ 
+   <script>
+  
+// Down arrow ikonlarını seçme
+// Down arrow ikonlarını seçme
+const downArrowIconA = document.getElementById('downArrowZ');
+const upArrowIconC = document.getElementById('upArrowZ');
+
+// Down arrow ikonuna tıklama olayını dinle
+downArrowIconA.addEventListener('click', () => {
+    // Eğer ekran genişliği 1024 piksel veya daha küçükse,
+    // Sayfayı ekran boyutu kadar aşağı kaydır.
+    if (window.innerWidth <= 1024) {
+        window.scrollTo({
+            top: Math.min(window.scrollY + window.innerHeight, document.body.scrollHeight),
+            behavior: 'smooth' // Animasyonlu kaydırma için
+        });
+    } else {
+        // Ekran genişliği 1024 pikselden büyükse, sayfayı en alta kaydır.
+        window.scrollTo({
+            top: Math.min(window.scrollY + window.innerHeight, document.body.scrollHeight),
+            behavior: 'smooth' // Animasyonlu kaydırma için
+        });
+    }
+});
+
+// Up arrow ikonuna tıklama olayını dinle
+upArrowIconC.addEventListener('click', () => {
+    // Sayfayı en üste kaydır
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Animasyonlu kaydırma için
+    });
+});
+
+    </script>
+  
+  </body>

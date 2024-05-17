@@ -1,0 +1,15 @@
+.section{
+  background-color: black;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease; /* Arka plan rengi geçişini belirleme */
+}
+
+.section {
+  padding: 50px;
+}
+

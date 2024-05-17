@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aziz Film</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" ></script>
+    <link rel="stylesheet"  href="style1.css" />
+
+
+    <style>
+
+#downArrowB{
+color: #fff;
+font-size: 10rem;
+margin-top: 80rem;
+padding: -3rem;
+margin-right: 43rem;
+}
+
+
+#downArrow{
+color: #fff;
+font-size: 10rem;
+margin-top: 35rem;
+padding: -3rem;
+margin-right: 43rem;
+}
+
+.section{
+  margin-top: 4rem;
+}
+
+body{
+  background-color:black;
+}
+#downArrowC{
+color: #fff;
+font-size: 10rem;
+margin-top: 133rem;
+padding: -3rem;
+margin-right: 43rem;
+}
+#upArrow{
+color: #fff;
+font-size: 10rem;
+margin-top: 183rem;
+padding: -3rem;
+margin-right: 43rem;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <!-- Sayfa içeriği buraya gelecek -->
+    <!--! navbar start  -->
+    <div class="navbar">
+      <div class="navbar-wrapper">
+        <div class="logo-wrapper">
+          <a href="index.html" class="logo">A<span id="abc">ziz</span></a>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li><a class="menu-list-item"  href="index.html" > Ana Sayfa</a></li>
+            <li><a  href="filmler.html" class="menu-list-item">Filmler</a></li>
+            <li><a  href="dizi.html" class="menu-list-item">Diziler</a></li>
+            <li><a  href="liste.html" class="menu-list-item">Listem</a></li>
+            <li><a  href="contact1.html" class="menu-list-item">İletişim</a></li>
+          </ul>
+        </div>
+          <div class="toggle">
+            <i class="bi bi-moon-fill toggle-icon"></i>
+            <i class="bi bi-brightness-high-fill toggle-icon"></i>
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+    <!--! navbar end  -->
+    
+    <ul class="filmler-list">
+      <li>
+      <div class="container">
+      <!-- featured content start -->
+      <div class="content-wrapper">
+        <div class="featured-content">
+          <img class="featured-title" src="img/spiderman-title.png" alt="" />
+          <p class="featured-desc">
+            Örümcek-Adam: Evden Uzakta Columbia Pictures ve Marvel Studios tarafından ortaklaşa üretilen ve Sony Pictures Releasing tarafından dağıtılan, Marvel Comics karakteri Örümcek Adam çizgi romanlarından uyarlanan 2019 yapımı ABD süper kahraman filmidir.
+          </p>
+          <div class="featured-buttons">
+            <button class="play-button" onclick=redirectToLink(https://www.youtube.com/watch?v=Nt9L1jCKGnE)>
+              <i><a href="https://www.youtube.com/watch?v=Nt9L1jCKGnE" class="bi bi-play-circle"></a></i>
+              Oynat
+            </button>
+            <button class="info-button"  onclick=redirectToLink(https://tr.wikipedia.org/wiki/%C3%96r%C3%BCmcek-Adam:_Evden_Uzakta)>
+              <i><a class="bi bi-info-circle" href="https://tr.wikipedia.org/wiki/%C3%96r%C3%BCmcek-Adam:_Evden_Uzakta"></a></i>
+              Daha Fazla Bilgi
+            </button>
+          </div>
+        </div>
+      </li>  <i id="downArrow" class="bi bi-chevron-down arrow"></i>
+      <li>
+      </div>
+      <div class="section">
+      <div class="container">
+        <!-- featured content start -->
+        <div class="content-wrapper">
+          <div class="featured-content-3">
+            <img class="featured-title" src="img/gora.png" alt="" />
+            <p class="featured-desc">
+              Sahte UFO fotoğrafçısı ve halı tüccarı olan Arif uzaylılarca kaçırılır. Gora gezegeninde, yaklaşan göktaşından kurtulmak ve özgür kalmak için arkadaşlarına yardım eder.
+                        </p>
+            <div class="featured-buttons">
+              <button class="play-button" onclick=redirectToLink(https://youtu.be/gv59E3PeWLo?si=rM98mf1RGA_MOTSp)>
+                <i><a class="bi bi-play-circle" href="https://youtu.be/gv59E3PeWLo?si=rM98mf1RGA_MOTSp" ></a></i>
+                Oynat
+              </button>
+              <button class="info-button" onclick=redirectToLink(https://www.netflix.com/tr/title/80038440)>
+                <i><a class="bi bi-info-circle" href="https://www.netflix.com/tr/title/80038440"></a></i>
+                Daha Fazla Bilgi
+              </button>
+            </div>
+          </div>
+        </div>
+      </li> <i id="downArrowB" class="bi bi-chevron-down arrow"></i>
+      <li>
+      </div>
+      <div class="section">
+        <div class="container">
+          <!-- featured content start -->
+          <div class="content-wrapper">
+            <div class="featured-content-5">
+              <img class="featured-title" src="img/hobbit.jpeg" alt="" />
+              <p class="featured-desc">
+                Yönetmen Peter Jackson, her şeyin başlangıcı olan bu destansı ve fantastik macera için Orta Dünya’ya geri dönüyor! Gri Gandalf ve on üç cüce tarafından işe alınan Bilbo Baggins, Cüce Krallığı Erebor'un geri alınmasına yardım etmek için onlarla birlikte yola çıkıyor!</p>
+              <div class="featured-buttons">
+                <button class="play-button" onclick=redirectToLink(https://www.youtube.com/watch?v=JTSoD4BBCJc)>
+                  <i><a href="https://www.youtube.com/watch?v=JTSoD4BBCJc" class="bi bi-play-circle"></a></i>
+                  Oynat
+                </button>
+                <button class="info-button" onclick=redirectToLink(https://www.primevideo.com/-/tr/region/eu/detail/Hobbit-Beklenmedik-Yolculuk/0LCQAXV4R5PUUZUGFWHO7ZBTD3?&language=tr)>
+                  <i><a class="bi bi-info-circle" href="https://www.primevideo.com/-/tr/region/eu/detail/Hobbit-Beklenmedik-Yolculuk/0LCQAXV4R5PUUZUGFWHO7ZBTD3?&language=tr"></a></i>
+                  Daha Fazla Bilgi
+                </button>
+              </div>
+            </div>
+          </div>
+        </li> <i id="downArrowC" class="bi bi-chevron-down arrow"></i>
+        <li>
+        </div>
+      <div class="section">
+      <div class="container">
+        <div class="content-wrapper">
+          <div class="featured-content-4">
+            <img class="featured-title" src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABcn-Bsq-ijO8_clQFlVeP8RfTfXi0JK_XosDj9OSkz6nYoi4iFxzY0GbNjqlgyRk-bvMD9f4JqWtIJ3U7wnNRi1gFFnAzDOZJMM0TjqsZfI5.png?r=63c" alt="" />
+            <p class="featured-desc">
+              Yanlış giden bir deney, Dr. Bruce Banner'ı sinirlendiğinde devasa yeşil bir canavara dönüştürür ve onu ordunun hedefi haline getirir.
+                        </p>
+            <div class="featured-buttons">
+              <button class="play-button" onclick=redirectToLink(https://www.youtube.com/watch?v=xbqNb2PFKKA)>
+                <i><a href="https://www.youtube.com/watch?v=xbqNb2PFKKA" class="bi bi-play-circle"></a></i>
+                Oynat
+              </button>
+              <button class="info-button" onclick=redirectToLink(https://www.netflix.com/es-en/title/70087537)>
+                <i><a class="bi bi-info-circle" href="https://www.netflix.com/es-en/title/70087537"></a></i>
+                Daha Fazla Bilgi
+              </button>
+            </div>
+          </div>
+        </div>
+      </li> <i id="upArrow" class="bi bi-chevron-up arrow"></i>
+      </ul>
+    </div>
+
+ 
+   <script>
+  // Get the parent element of the buttons
+const featuredButtons = document.querySelector('.featured-buttons');
+
+// Add a click event listener to the parent element
+featuredButtons.addEventListener('click', (event) => {
+    // Check if the clicked element is a button
+    if (event.target.tagName === 'BUTTON') {
+        // Get the URL from the button's data-url attribute
+        const url = event.target.getAttribute('data-url');
+        // Call the redirectToLink function with the URL
+        redirectToLink(url);
+    }
+});
+
+// Function to redirect to a URL
+function redirectToLink(url) {
+    window.location.href = url;
+}
+
+// Down arrow ikonlarını seçme
+const downArrowIconA = document.getElementById('downArrow');
+const downArrowIconB = document.getElementById('downArrowB');
+const downArrowIconD = document.getElementById('downArrowC');
+const downArrowIconC = document.getElementById('upArrow');
+// İkonlara tıklama olaylarını dinleyen fonksiyon
+downArrowIconA.addEventListener('click', () => {
+    // Eğer ekran genişliği 1024 piksel veya daha küçükse,
+    // Sayfayı ekran boyutu kadar aşağı kaydır.
+    if (window.innerWidth <= 1024) {
+        window.scrollTo({
+            top: Math.min(window.scrollY + window.innerHeight, document.body.scrollHeight),
+            behavior: 'smooth' // Animasyonlu kaydırma için
+        });
+    } else {
+        // Ekran genişliği 1024 pikselden büyükse, sayfayı en alta kaydır.
+        window.scrollTo({
+            top: Math.min(window.scrollY + window.innerHeight, document.body.scrollHeight),
+            behavior: 'smooth' // Animasyonlu kaydırma için
+        });
+    }
+});
+
+downArrowIconB.addEventListener('click', () => {
+    // Eğer ekran genişliği 1024 piksel veya daha küçükse,
+    // Sayfayı ekran boyutu kadar aşağı kaydır.
+    if (window.innerWidth <= 1024) {
+        window.scrollTo({
+            top: Math.min(window.scrollY + window.innerHeight, document.body.scrollHeight),
+            behavior: 'smooth' // Animasyonlu kaydırma için
+        });
+    } else {
+        // Ekran genişliği 1024 pikselden büyükse, sayfayı en alta kaydır.
+        window.scrollTo({
+            top: Math.min(window.scrollY + window.innerHeight, document.body.scrollHeight),
+            behavior: 'smooth' // Animasyonlu kaydırma için
+        });
+    }
+});
+downArrowIconD.addEventListener('click', () => {
+    // Eğer ekran genişliği 1024 piksel veya daha küçükse,
+    // Sayfayı ekran boyutu kadar aşağı kaydır.
+    if (window.innerWidth <= 1024) {
+        window.scrollTo({
+            top: Math.min(window.scrollY + window.innerHeight, document.body.scrollHeight),
+            behavior: 'smooth' // Animasyonlu kaydırma için
+        });
+    } else {
+        // Ekran genişliği 1024 pikselden büyükse, sayfayı en alta kaydır.
+        window.scrollTo({
+            top: Math.min(window.scrollY + window.innerHeight, document.body.scrollHeight),
+            behavior: 'smooth' // Animasyonlu kaydırma için
+        });
+    }
+});
+
+downArrowIconC.addEventListener('click', () => {
+    // Eğer ekran genişliği 1024 piksel veya daha küçükse,
+    // Sayfayı ekran boyutu kadar aşağı kaydır.
+    window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Animasyonlu kaydırma için
+        });
+});
+
+    </script>
+  
+  </body>
